@@ -1,0 +1,335 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mmmu {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; 
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+/* .results-carousel .item {
+  margin: 20px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 0;
+} */
+
+.stats-image {
+  max-height: 250px;
+}
+
+#org-banners {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.org-banner {
+  /* margin: 5px; */
+  max-width: 100%;
+  height: 6em;
+  margin: 10px;
+  padding: 10px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.chart-item {
+  text-align: center;
+}
+
+.chart-label {
+  margin-top: 5px;
+}
+
+/* 媒体查询，只有当浏览器窗口宽度大于600px时才会应用 */
+@media (min-width: 600px) {
+  .chart-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* 当浏览器窗口宽度大于900px时 */
+@media (min-width: 900px) {
+  .chart-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.bottom-text {
+  margin-top: 30px; 
+}
+
+
+.model-labels-container {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px; 
+}
+
+.model-label {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+
+.leaderboard-label {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  color: rgb(48, 48, 48);
+}
+
+.box {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+  margin: 5px; 
+}
+
+.example_style {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; /* 或者设置具体的宽度值，例如800px */
+  max-width: 1500px; /* 设置最大宽度，防止图片太大 */
+  height: auto; /* 保持图片比例 */
+  margin: 0 auto; /* 设置左右外边距为自动，即水平居中 */
+  margin-bottom: 20px; /* 图片与下面文字之间的距离 */
+}
+
+
+/* 设置表格整体样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 设置表格标题样式
+caption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+} */
+/* 悬停效果 */
+/* tbody tr:hover {
+  background-color: #f1f1f1;
+} */
+/* 悬停效果，仅适用于特定行 */
+.hover-row:hover {
+  background-color: #f0f0f0; /* 鼠标悬停时的背景颜色 */
+}
+/* 表格头部样式 */
+thead th {
+  background-color: #0d0e0d;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* 表格主体样式 */
+tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #333;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+
+/* 设置表头文字大小 */
+th {
+  font-size: 18px;
+}
+
+/* 设置单元格中长文本的对齐方式 */
+td {
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+/* 设置边框圆角 */
+table, th, td {
+  border-radius: 5px;
+  border-spacing: 0;
+}
+
+/* 表格底部边框 */
+tbody tr:last-child {
+  border-bottom: 2px solid #4CAF50;
+}
+
+/* 调整表格宽度和单元格间距 */
+table {
+  max-width: 100%;
+  margin: 20px auto;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+
+.custom-container {
+  border: 2px solid black; /* 黑色方框 */
+  padding: 20px; /* 内边距 */
+  display: flex;
+  flex-direction: column; /* 纵向排列内容 */
+}
+
+.left-aligned {
+  text-align: left; /* 靠左对齐 */
+}
+
+.video-container {
+  display: flex;
+  justify-content: flex-start; /* 靠左对齐 */
+  margin-bottom: 20px;
+}
+
+video {
+  width: auto; /* 每个视频占50%宽度 */
+  height: auto; /* 高度自适应 */
+  min-width: 100px; /* 最小宽度，确保最小可读性 */
+
+  max-height: 300px; /* 可调整以允许更宽的覆盖范围 */
+}
+
+
+
+
+
+
