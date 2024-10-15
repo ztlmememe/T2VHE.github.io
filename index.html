@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PhyGenBench</title>
+  <title>T2VHE</title>
     <style>
         .hidden {
             display: none;
@@ -11,12 +11,18 @@
   <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
   <meta charset="utf-8">
-  <meta name="description"
+  <!-- <meta name="description"
         content="PhyGenBench: A Benchmark for Physics Generation">
   <meta name="keywords" content="PhyGenBench, Physics Generation, Benchmark ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> PhyGenBench: <b>Phy</b>sics <b>Gen</b>eration <b>Bench</b>mark</title>
+  <title> T2VHE: <b>Phy</b>sics <b>Gen</b>eration <b>Bench</b>mark</title> -->
 
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaTeX Formula Display</title> -->
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+  <script src="MathJax-master\es5\tex-mml-chtml.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -75,57 +81,62 @@
   </div>
 </nav>
 
+
+
+
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <span class="MMIU" style="vertical-align: middle">PhyGenBench</span>
+            <span class="MMIU" style="vertical-align: middle">T2VHE</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-       Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation
+            Rethinking Human Evaluation Protocol for Text-to-Video Models: Enhancing Reliability,Reproducibility,and Practicality
           </h2>
           <div class="is-size-5 publication-authors">
-            <!-- <span class="author-block">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup>,</span> -->
+            <!-- <span class="author-block">Xiang Yue*<sup style="color:#ed4b82;">†,1</sup>,</span> -->
             <span class="author-block">
-              Fanqing Meng<sup>*,</sup><sup style="color:#6fbf73;">1</sup><sup>,</sup><sup style="color:#ed4b82;">2</sup></a>
+              Tianle Zhang<sup style="color:#ed4b82;">1</sup><sup>,</sup><sup style="color:#6fbf73;">2</sup></a>
               ,
             </span>
             <!-- <span class="author-block">Yuansheng Ni*<sup style="color:#ffac33;">2</sup>,</span> -->
             <span class="author-block">
-              Jiaqi Liao<sup>*,</sup><sup style="color:#ed4b82;">2</sup>,</a>
+              Langtian Ma<sup style="color:#ffac33;">3</sup>,</a>
             </span>
             <span class="author-block">
-              Xinyu Tan</a>,
+              Yuchen Yan<sup style="color:#007bff;">4</sup>,</a>,
             </span>
-            <!-- <span class="author-block">Kai Zhang*<sup style="color:#ed4b82;">3</sup>,</span> -->
-            <span class="author-block">Wenqi Shao<sup style="color:#ed4b82;">2</sup><sup>,</sup><sup>†</sup>,</span>
-            <span class="author-block">Quanfeng Lu<sup style="color:#ed4b82;">2</sup>,</span>
-            <span class="author-block">Kaipeng Zhang<sup style="color:#ed4b82;">2</sup>,</span>
-            <span class="author-block">Yu Cheng<sup style="color:#007bff;">4</sup><sup>,</sup></a></span>
-            <span class="author-block">Dianqi Li,</a></span>
+            <!-- <span class="author-block">Kai Zhang*<sup style="color:#6fbf73;">3</sup>,</span> -->
+            <span class="author-block">Yuchen Zhang<sup style="color:#6fbf73;">2</sup>,</span>
+            <span class="author-block">Kai Wang<sup style="color:#6fbf73;">2</sup>,</span>
+            <span class="author-block">Yue Yang<sup style="color:#ed4b82;">1</sup>,</span>
+            <span class="author-block">Ziyao Guo<sup style="color:#ed4b82;">1</sup>,</span>
+            <span class="author-block">Wenqi Shao<sup style="color:#ed4b82;">1</sup>,</span>
+            <span class="author-block">Yang You<sup style="color:#6fbf73;">2</sup>,</span>
             <span class="author-block">Yu Qiao<sup style="color:#ed4b82;">1</sup>,</span>
+            <span class="author-block">Ping Luo<sup style="color:#770f4c;">5</sup>,</span>
+            <!-- <span ed4b82 6fbf73 6fbf73 class="author-block">Kaipeng Zhang<sup style="color:#6fbf73;">1</sup>,</span> -->
             
             <span class="author-block">
-              Ping Luo<sup style="color:#ffac33;">3</sup><sup>,</sup><sup style="color:#ed4b82;">2</sup><sup>,</sup><sup>†</sup></span>
+              Kaipeng Zhang<sup style="color:#ed4b82;">1</sup><sup>†</sup></span>
           </div>
           
           <br>
           
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup style="color:#6fbf73;">1</sup>Shanghai Jiao Tong University,</span>
-            <span class="author-block"><sup style="color:#ed4b82;">2</sup>OpenGVLab, Shanghai AI Laboratory</span></br>
-            <span class="author-block"><sup style="color:#ffac33;">3</sup>The University of Hong Kong,</span>
-            <span class="author-block"><sup style="color:#007bff;">4</sup>The Chinese University of Hong Kong,</span>
+            <span class="author-block"><sup style="color:#ed4b82;">1</sup>Shanghai AI Laboratory,</span>
+            <span class="author-block"><sup style="color:#6fbf73;">2</sup>National University of Singapore</span></br>
+            <span class="author-block"><sup style="color:#ffac33;">3</sup>University of Wisconsin-Madison,</span>
+            <span class="author-block"><sup style="color:#007bff;">4</sup>University of California San Diego,</span>
+            <span class="author-block"><sup style="color:#770f4c;">5</sup>The University of Hong Kong</span>
           </div>
 
           <br>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">*Equal contribution</span><br>
             <span class="author-block">†Corresponding Author:</span>
-            <span class="author-block"><a href="mailto:shaowenqi@pjlab.org.cn">shaowenqi@pjlab.org.cn</a>,</span>
-            <span class="author-block"><a href="mailto:pluo@cs.hku.hk">pluo@cs.hku.hk</a></span>
+            <span class="author-block"><a href="mailto:zhangkaipeng@pjlab.org.cn">zhangkaipeng@pjlab.org.cn</a></span>
           </div>
           
           <div class="content has-text-centered">
@@ -135,28 +146,17 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <!-- @PAN TODO: change links -->
-                <a href=""
+                <!-- @PAN TODO: change links https://arxiv.org/abs/2406.08845 --> 
+                <a href="https://arxiv.org/abs/2406.08845"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                      <i class="fas fa-file-pdf"></i>  
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
-                <a href="https://huggingface.co/datasets/FanqingM/MMIU-Benchmark"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <!-- <i class="far fa-images"></i> -->
-                      <!-- <p style="font-size:18px">🤗</p> -->
-                      <!-- 🔗 -->
-                  <!-- </span>
-                  <span>Dataset</span>
-                </a>
-              </span>  -->
               <span class="link-block">
-                <a href="https://github.com/OpenGVLab/PhyGenBench"
+                <a href="https://github.com/ztlmememe/T2VHE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -166,16 +166,16 @@
               </span>
               
               <!-- Leaderboard Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="#leaderboard"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon has-text-white">
                     <i class="fa-solid fa-medal"></i>
-                      <!-- <p style="font-size:18px">🏆</p> -->
-                  </span>
+                      <p style="font-size:18px">🏆</p> -->
+                  <!-- </span>
                   <span>Leaderboard</span>
                 </a>
-              </span>
+              </span> --> 
             </div>
           </div>
         </div>
@@ -207,9 +207,15 @@
         <div class="content has-text-centered">
           <h2 class="title is-3">Overview</h2></div>
           <div class="content has-text-justified">
-          <img src="static/images/PhyGenBench.png" alt="PhyGenBench" width="100%"/>
-            <p>Overview of PhyGenBench. <b>PhyGenBench</b> comprises 160 carefully crafted prompts across 27 distinct physical laws, spanning four fundamental physical domains, which could comprehensively assesses models' understanding of physical commonsense. We generated 1280 videos by evaluating 8 advanced models.Additionally, our captions encompass totally 165 unique objects and 42 unique actions with an average
-            length of 18.75 words.</p>
+          <img src="static/images/PIP.png" alt="PhyGenBench" width="100%"/>
+            <p>Overview of T2VHE. <b>T2VHE</b> comprises four key components: evaluation metrics, evaluation method,
+              evaluator, and dynamic evaluation module. To ensure a comprehensive assessment of the T2V
+              model, we meticulously devise a set of evaluation metrics, accompanied by precise definitions
+              and corresponding reference perspectives. For ease of annotation, we employ a comparison-based
+              scoring format as evaluation method and develop annotator training to ensure researchers can
+              procure high-quality annotations using post-training LRAs. Furthermore, our protocol incorporates
+              an optional dynamic evaluation component, enabling researchers to attain reliable evaluation results
+              at reduced costs.</p>
           </p>
         </div>
       <!-- </div> -->
@@ -225,39 +231,26 @@
         <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-center">
           <p>
-            <b>🔥We release the code and data at <a href="https://github.com/OpenGVLab/PhyGenBench">github</a>.</b>
+            <b>🔥We release the code and data at <a href="https://github.com/ztlmememe/T2VHE">github</a>.</b>
           </p>
       </div>      
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Text-to-video (T2V) models like Sora have made significant strides in visualizing complex prompts, which is increasingly
-            viewed as a promising path towards constructing the universal world simulator. Cognitive psychologists believe
-            that the foundation for achieving this goal is the ability to understand intuitive
-            physics. However, the capacity of these models to accurately represent intuitive
-            physics remains largely unexplored. To bridge this gap, we introduce PhyGenBench, a comprehensive Physics Generation
-            Benchmark designed to evaluate
-            physical commonsense correctness in T2V generation. PhyGenBench comprises
-            160 carefully crafted prompts across 27 distinct physical laws, spanning four fundamental domains, which could
-            comprehensively assesses models' understanding of physical commonsense. Alongside PhyGenBench, we propose a novel
-            evaluation framework called PhyGenEval. This framework employs a hierarchical evaluation structure utilizing appropriate
-            advanced vision-language models
-            and large language models to assess physical commonsense. Through PhyGenBench and PhyGenEval, we can conduct large-scale
-            automated assessments of
-            T2V models' understanding of physical commonsense, which align closely with
-            human feedback. Our evaluation results and in-depth analysis demonstrate that
-            current models struggle to generate videos that comply with physical commonsense. Moreover, simply scaling up models or
-            employing prompt engineering
-            techniques is insufficient to fully address the challenges presented by PhyGenBench (e.g., dynamic physical
-            phenomenons). We hope this study will inspire
-            the community to prioritize the learning of physical commonsense in these models beyond entertainment applications.
+            Text-to-video (T2V) technology has made significant advancements in the last two years and garnered
+increasing attention from the general community. T2V products such as Gen2 and Pika
+have attracted many users. More recently, Sora, a powerful T2V model from OpenAI, further
+heightened public anticipation for the T2V technology. Predictably, the evaluation of the T2V
+generation will also become increasingly important, which can guide the development of T2V and
+assist the public in selecting appropriate models. This paper does a comprehensive paper
+survey and explores a human evaluation protocol for T2V generation.
           </p>
         </div>
-        <img src="static/images/crop_demo_00.png" alt="demo" class="center">
+        <img src="static/images/EXAMPLE.png" alt="demo" class="example_style" >
         <div>
-            Samples of videos generated by Kling or Gen-3 in PhyGenBench with 4 different aspects.
-            The results show that current T2V models struggle to generate videos that align with physical commonsense (e.g., the
-            lack of a plane's reflection in water in the first video of the second row).
+            Example of the annotation interface (left), wherein annotators choose the superior video based on provided evaluation metrics. 
+            Detailed explanation and reference perspectives of the “Video Quality" metric, as well as the corresponding examples and analysis process (right), 
+            annotators can make more accurate judgments by reading these guidelines and examples.
         </div>
       </div>
     </div>
@@ -268,7 +261,7 @@
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
   <h1 class="title is-1 MMIU">
-    <span class="MMIU" style="vertical-align: middle">PhyGenBench
+    <span class="MMIU" style="vertical-align: middle">T2VHE
     </span>
   </h1>
   </div>
@@ -279,46 +272,345 @@
     <div class="columns is-centered has-text-centered">
       <!-- <div class="column is-full-width has-text-centered"> -->
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Benchmark Construction</h2>
-        <div class="content has-text-justified">
-          <img src="static/images/construction pipeline.png" alt="pipeline" class="center">
-          <br>
-          <p>
-            An illustration of our data construction pipeline which divides into 4 stages.First, We select key physical laws and manually craft initial prompts that reflect the corresponding physical phenomena in <b>Prompt Engineering</b>.Then GPT-4o adds details in <b>Prompt Augmentation</b> and enhances diversity by varying objects in <b
-            >Diversity Enhancement</b>. Finally, After manual review in <b>Quality Control</b>, we obtain 160 T2V prompts.
-          </p>
-        </div>
+        <h2 class="title is-3">Evaluation metrics</h2>
+        <table border="1" cellspacing="0" cellpadding="4" style="width:100%; border-collapse: collapse;">
+          <thead>
+              <tr>
+                  <th style="width:15%;">Metric</th>
+                  <th style="width:22%;">Definition</th>
+                  <th style="width:18%;">Reference perspectives</th>
+                  <th style="width:30%;">Description</th>
+                  <th style="width:15%;">Type</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Video Quality</td>
+              <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Which video is more realistic and aesthetically pleasing?</td>
+              <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Video Fidelity</td>
+              <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Assess whether the video appears highly realistic, making it hard to distinguish from actual footage.</td>
+              <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Objective</td>
+          </tr>
+          <tr>
+              <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Aesthetic Appeal</td>
+              <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Evaluate the artistic beauty and aesthetic value of each video frame, including color coordination, composition, and lighting effects.</td>
+          </tr>
+          
+      
+              <tr>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px; ">Temporal Quality</td>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Which video has better consistency and less flickering over time?</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Content Consistency</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Evaluate whether the subject's and background's appearances remain unchanged throughout the video.</td>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Objective</td>
+              </tr>
+              <tr>
+          
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Temporal Flickering</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Assess the consistency of local and high-frequency details over time in the video.</td>
+     
+              </tr>
+      
+              <tr>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Motion Quality</td>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Which video contains motions that are more natural, smooth, and consistent with physical laws?</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Movement Fluidity</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Evaluate the natural fluidity and adherence to physical laws of movements within the video.</td>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Objective</td>
+              </tr>
+              <tr>
+                  
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Motion Intensity</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Assess whether the dynamic activities in the video are sufficient and appropriate.</td>
+                
+              </tr>
+      
+              <tr>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Text Alignment</td>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Which video has a higher degree of alignment with the prompt?</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Object Category</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Assess whether the video accurately reflects the types and quantities of objects described in the text.</td>
+                  <td rowspan="2" class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Objective</td>
+              </tr>
+              <tr>
+                
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">Style Consistency</td>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 13px;">Evaluate whether the visual style of the video matches the text description.</td>
+     
+              </tr>
+      
+              <tr style="background-color: #f0f0f0;">
+                  <td rowspan="3" style="text-align: center; vertical-align: middle; font-size: 15px;">Ethical Robustness</td>
+                  <td rowspan="3" style="text-align: center; vertical-align: middle; font-size: 13px;">Which video demonstrates higher ethical standards and fairness?</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 15px;">Toxicity</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 13px;">Evaluate the video for any content that might be deemed toxic or inappropriate.</td>
+                  <td rowspan="3" style="text-align: center; vertical-align: middle; font-size: 15px;">Subjectivity</td>
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+                  
+                  <td style="text-align: center; vertical-align: middle; font-size: 15px;">Fairness</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 13px;">Determine the fairness in the portrayal and treatment of characters or subjects across different social dimensions.</td>
+                 
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+         
+                  <td style="text-align: center; vertical-align: middle; font-size: 15px;">Bias</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 13px;">Assess the presence and handling of biased content within the video.</td>
+
+              </tr>
+      
+              <tr style="background-color: #f0f0f0;">
+                  <td rowspan="3" style="text-align: center; vertical-align: middle; font-size: 15px;">Human Preference</td>
+                  <td rowspan="3" style="text-align: center; vertical-align: middle; font-size: 13px;">As an annotator, which video do you prefer?</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 15px;">Video Originality</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 13px;">Evaluate the originality of the video's contents.</td>
+                  <td rowspan="3" style="text-align: center; vertical-align: middle; font-size: 15px;">Subjectivity</td>
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+            
+                  <td style="text-align: center; vertical-align: middle; font-size: 15px;">Overall Impact</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 13px;">Assess the emotional and intellectual value provided by the video.</td>
+          
+              </tr>
+              <tr style="background-color: #f0f0f0;">
+        
+                  <td style="text-align: center; vertical-align: middle; font-size: 15px;">Personal Preference</td>
+                  <td style="text-align: center; vertical-align: middle; font-size: 13px;">Assess the video based on the previous five metrics and personal preferences.</td>
+        
+              </tr>
+          </tbody>
+      </table>
+      <div class="content has-text-justified">
+        <p>
+          Comprehensive evaluation metrics for T2V models. 
+          The table presents T2VHE's evaluation metrics, their definitions, 
+          corresponding reference perspectives, and types. 
+          When considering different indicators, annotators rely differently on 
+          reference angles in making their judgments.
+        </p>
+      </div>
+      
+      
+
     </div>
     </div>
-  </div>
-</section>
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-    <h1 class="title is-1 MMIU">
-      <span class="MMIU" style="vertical-align: middle">PhyGenEval
-      </span>
-    </h1>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
+
     <div class="columns is-centered has-text-centered">
       <!-- <div class="column is-full-width has-text-centered"> -->
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Overview</h2>
-        <div class="content has-text-justified">
-          <img src="./static/images/crop_eval_00.png" alt="comparison" class="center" style="width: 200%; height: auto;">
-          <p>
-            An overview of the proposed PhyGenEval. <b>PhyGenEval</b> is divided into three parts: <b>Key
-            Physical Phenomena Detection</b>, <b>Physics Order Verification</b>, and <b>Overall Naturalness Evaluation</b>.
-            Each part uses an appropriate VLM in combination with physical-based customized questions generated by GPT-4o. The
-            final score is the combined result of the three parts. For the example in the
-            figure, the three-stage scores are 0, 1 (only q1 is correct), and 0. The final score is calculated as 0
-            </p>
-        </div>
-      </div>
+        <h2 class="title is-3">Evaluation method</h2>
+
+        
+      <div class="content has-text-justified">
+        <p>
+          Regarding absolute scoring could still result in noisy annotations and pose challenges in reaching
+          consensus among annotator, we use the less challenging <b>comparative scoring method</b>.
+Furthermore, traditional comparative scoring protocols rely on the win ratio in pair-
+wise comparison, however, this method has several drawbacks, i.e., introducing bias if models are not uniformly compared, does not reliably indicate the likelihood of one model outperforming
+another. To overcome these issues, we adopt the <b>Rao and Kupper model</b>, a probabilistic
+approach that allows for more efficient handling of the results of pairwise comparisons using less data
+than full comparisons. The estimation is conducted by maximizing the log-likelihood function:
+
+
+\[
+    l(p, \theta) = \sum_{i = 1 }^{t} \sum_{j = i + 1}^t \left( n_{ij} \log \frac{p_i}{p_i + \theta p_j} 
+    + n_{ji} \log \frac{p_j}{\theta p_i + p_j} + \tilde{n}_{ij} \log 
+    \frac{p_i p_j (\theta^2 -1)}{(p_i + \theta p_j)(\theta p_i + p_j)} \right),
+    \]
+
+where $t$ is the number of models, $p = (p_1, \cdots, p_t)^T \in \mathbb{R}^t$ is the vector representing the scores of each model, $\theta$ is a tolerance parameter, $n_{ij}$ denote the number of times model $i$ is preferred to model $j$, and $\tilde{n_{ij}}$ denotes the number of times the two models reached a tie.
+
+</p>
     </div>
   </div>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluators</h2>
+        <div class="content has-text-justified">
+
+          <p>
+
+            To ensure the quality of the annotations, for each metric, we design a set of annotator training, including their detailed definitions, 
+              corresponding reference perspectives, and for each reference perspective, 
+              we further provide the corresponding analysis process and examples to help the annotators to make decisions. 
+              At the same time, for different types of indicators, we have different notes to help annotators achieve a balance between objective criteria and subjective judgment.
+              Below are training examples of objective metric "Video Quality" and subjective metric "Human Preference".
+            </p>
+
+        </div>
+
+        
+        <div class="content has-text-justified">
+
+          <p>
+
+            <b>Example of training for "Video Quality"</b>
+            </p>
+
+        </div>
+
+    <div class=" custom-container"> <!-- 添加自定义容器类 -->
+      <div class="left-aligned"> <!-- 添加靠左对齐类 -->
+  
+          <span style="font-size:22px;"><b>Core Question: Which video is more realistic and aesthetically pleasing?</b></span><br><br> 
+  
+          <span style="color: red; font-weight: bold;">
+              <b>Note:</b> Please select "Equal" only when both videos perform identically across all reference angles, 
+              and if there are conflicting views on the reference perspectives, please prioritize them in order.<br>
+              For example, if the video on the left is more realistic and the video on the right is more aesthetically pleasing, 
+              the result should be "Left is Better".</span><br><br>
+  
+          <span style="font-size:22px;"><b>Reference perspectives:</b></span><br><br> 
+          P1. Video Fidelity -- Assess whether the video appears highly realistic, making it hard to distinguish from actual footage.<br><br> 
+          - Example prompt: bat eating fruits while hanging<br> 
+          <span style='display:block; margin-top:10px;margin-bottom:-10px;'>
+              - Analysis: In the left video, the bats and fruits merge together, and in some frames three wings appear, these scenes are almost unseen in reality. 
+              By contrast, the scenes in the right video are comparatively more reasonable.</span><br> 
+          <span style="color: red; font-weight: bold;">Conclusion: Right is better.</span><br><br> 
+          
+          <div class="video-container"> 
+              <video src="static\videos\dim1\1-1.mp4" controls></video>
+              <video src="static\videos\dim1\1-2.mp4" controls></video>
+          </div>
+          
+          P2. Aesthetic Appeal -- Evaluate the artistic beauty and aesthetic value of each video frame, including color coordination, composition, and lighting effects.<br><br> 
+          - Example prompt: an aerial footage of a red sky<br> 
+          <span style='display:block; margin-top:10px;margin-bottom:-10px;'>
+              - Analysis: The left video features richer content with a more diverse selection and combination of colors, and excellent lighting effects. 
+              In contrast, the right video is relatively more monotonous, and its color coordination is less appealing.</span><br> 
+          <span style="color: red; font-weight: bold;">Conclusion: Left is better.</span><br><br> 
+          
+          <div class="video-container"> 
+              <video src="static\videos\dim1\2-1.mp4" controls></video>
+              <video src="static\videos\dim1\2-2.mp4" controls></video>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="content has-text-justified">
+    <div style="height: 20px;"></div> <!-- 创建间距 -->
+    <p >
+
+      <b>Example of training for "Human Preference"</b>
+      </p>
+
+  </div>
+
+  <div class=" custom-container"> <!-- 添加自定义容器类 -->
+    <div class="left-aligned"> <!-- 添加靠左对齐类 -->
+
+      <span style="font-size:22px;"><b>Core Question: As an annotator, which video do you prefer?
+        If there are conflicting views on the reference perspectives, please prioritize them to your own liking. </b></span><br><br>
+    <span style="color: red; font-weight: bold;">
+     <b>Note:</b> Due to the subjective nature of this criterion, this guide only offers possible perspectives for reference.</span><br><br> 
+    <span style="font-size:22px;"><b>Reference perspectives:</b></span><br><br> 
+    
+    P1: Video Originality -- Evaluate the originality of the video's contents.<br><br> 
+    - Example 1: Whether the video has its own innovative features based on corresponding real items?<br> 
+    - Example 2: Can the video be distinguished from traditional videos in terms of style or narrative technique?<br><br>
+    
+    P2: Overall impact -- Assess the emotional and intellectual value provided by the video.<br><br> 
+    - Example 1: Does the video evoke a strong emotional response, such as joy, sadness, or excitement?<br> 
+    - Example 2: Does the video stimulate intellectual curiosity or provide thought-provoking content?<br><br>
+    
+    P3: Personal Preference -- Assess the video based on the previous five metrics and personal preferences.<br><br> 
+    - Example 1: Does the artistic style of the video appeal to your personal taste?<br> 
+    - Example 2: Do the themes or the moral messages of the video resonate with your personal values or experiences?
+    </div>
+</div>
+</div>
+</div>
+
+
+<div style="clear: both;"></div>
+
+
+
+
+<div class="columns is-centered has-text-centered">
+  <!-- <div class="column is-full-width has-text-centered"> -->
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Dynamic evaluation module</h2>
+
+    <div class="content has-text-justified">
+
+      <p>
+        Evaluating multiple video models via traditional pairwise evaluation protocols becomes increasingly 
+resource-intensive as the number of models expands. 
+To efficiently obtain stable model rankings, we propose a pluggable dynamic evaluation module, the specific process is as follows:
+
+<h3>Key Principles</h3>
+<ul>
+<li><strong>Video Quality Proximity Rule</strong>
+  <ul>
+      <li>Leverage the scoring results of automated metrics to allow human annotators to prioritize the annotation of samples that are difficult to distinguish with automated metrics.</li>
+      <li>Ensures that initially evaluated video pairs have similar quality levels.</li>
+  </ul>
+</li>
+<li><strong>Model strength Rule</strong>
+  <ul>
+      <li>Determines the evaluation priority of subsequent video pairs based on model strength scores.</li>
+      <li>Reducing the number of comparisons between models with significant differences in strength to improve algorithmic efficiency.</li>
+  </ul>
+</li>
+</ul>
+
+<h3>Evaluation Process</h3>
+
+<ol>
+<li><strong>Initial Model Strength Assignment</strong>
+  <ul>
+      <li>Each model is assigned an initial neutral strength value, indicating no prior bias.</li>
+  </ul>
+</li>
+
+<li><strong>Automatic Metrics Computation</strong>
+  <ul>
+      <li>For each video, the following metrics were evaluated by a pre-trained scorer: subject consistency, temporal flickering, motion smoothness, dynamic fegree, aesthetic quality, imaging quality, and overall consistency.</li>
+      <li>Scores are normalized and summed to produce the feature score for each video.</li>
+  </ul>
+</li>
+
+<li><strong>Group Construction</strong>
+  <ul>
+      <li>For each prompt, groups of model pairs are constructed.</li>
+      <li>The absolute value of the difference between the scores of two videos in a pair is input into an exponential decay model.</li>
+      <li>The output value is the score of each video pair, and the sum of these scores forms the total score for the group.</li>
+  </ul>
+</li>
+
+<li><strong>Sorting and Grouping</strong>
+  <ul>
+      <li>Groups were ranked according to their total scores, with higher scores at the top indicating less variation within the group.</li>
+      <li>This preprocessing step <strong>does not</strong> increase the cost of our evaluation protocol.</li>
+  </ul>
+</li>
+
+<li><strong>Human Evaluation Phase</strong>
+  <ul>
+      <li>An initial set of video pairs is evaluated by humans, and model strengths are updated using the Rao and Kupper model.</li>
+      <li>Comparisons are then split into batches. For each video pair, the absolute difference in scores between the two models is entered into an exponential decay model, whose output value is the probability that this pair will be discarded. After each batch, the model strength estimates were updated under the six evaluation dimensions.</li>
+      <li>The evaluation ends when the model rankings stabilize, meaning the rankings of models under each dimension remain unchanged for several consecutive batches.</li>
+  </ul>
+</li>
+</ol>
+</p>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+          
 </section>
 <style>
   .image-row {
@@ -334,472 +626,368 @@
     <h1 class="title is-1 MMT-Bench">Experiment Results</h1>
   </div>
 </section>
+
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <!-- <div class="column is-full-width has-text-centered"> -->
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Comparison Results</h2>
-        <div class="content has-text-justified">
-          <img src="./static/images/crop_eval_compare_00.png"  alt="comparison" class="center" style="width: 200%; height: auto;">
-          <p>
-            The comparison between PhyGenEval and existing T2V evaluation metrics including Videophy,VideoScore and
-            DEVIL in
-            PhyGenBench.The score generated by the metric reflects the degree to which the video conforms to physics. The higher the score, the more the video conforms to physics.<i>(take video (c) as example,the stone should sink to the bottom of the pool due to high density,but the video shows the stone floating on the surface which completely violates physics, so the expected score is 0)</i>  The specific <b>scoring criteria</b> is provided below. As shown in image, Except for the proposed PhyGenEval, the current methods cannot reasonably
-            assess the correctness of physical commosense in videos from PhyGenBench.In other words, PhyGenEval is much more closely aligned with human judgement.
-        </div>
-        <div class="column is-full has-text-centered content">
-          <h2 class="title is-3" id="examples">Scoring Criteria</h2>
-          <img src="./static/images/scoring criteria.png" alt="comparison" class="center" style="width: 50%; height: auto;">
-          <div class="column is-full has-text-centered content">
-            <h2 class="title is-3" id="examples">Comparison Results Video Display</h2>
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="m-2">
-                <video width="200%" controls>
-                  <source src="./static/videos/eval/1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img src="./static/images/1.png" alt="evaluation" style="width:100%;">
+        <h2 class="title is-3">Evaluation results</h2>
+        
+      </div>
+    </div>
 
-                <div class="content has-text-justified custom-background p-2 custom-font" style="height: 110px">
-                  <b>(a) A delicate, fragile <span style="color:red">egg</span> is
-                    hurled with <span style="color:red">significant force</span>
-                    towards a rugged, solid <span style="color:red">rock
-                    surface</span>, where it collides
-                    upon impact</b>
-                </div>
-              </div>
-              <div class="m-2">
-                <video width="200%" controls>
-                  <source src="./static/videos/eval/2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img src="./static/images/2.png" alt="evaluation" style="width:100%;">
-                <div class="content has-text-justified custom-background p-2 custom-font" style="height: 110px">
-                  <b>(b) A cup of oil is slowly poured
-                    out <span style="color:red">in the space station</span>,
-                    releasing the liquid into the
-                    surrounding area</b>
-                </div>
-              </div>
-              <div class="m-2">
-                <video width="200%" controls>
-                  <source src="./static/videos/eval/3.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img src="./static/images/3.png" alt="evaluation" style="width:100%;">
-                <div class="content has-text-justified custom-background p-2 custom-font" style="height: 110px">
-                  <b>(c) A <span style="color:red">stone</span> is gently placed on
-                    the surface of a pool filled
-                    with water.</b>
-                </div>
-              </div>
-              <div class="m-2">
-                <video width="200%" controls>
-                  <source src="./static/videos/eval/4.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img src="./static/images/4.png" alt="evaluation" style="width:100%;">
-                <div class="content has-text-justified custom-background p-2 custom-font" style="height: 110px">
-                  <b>(d) A timelapse captures the
-                    reaction a s <span style="color:red">concentrated
-                    sulfuric acid</span> is poured onto a
-                    piece of <span style="color:red">bread</span>.</b>
-                </div>
-              </div>
-              <div class="m-2">
-                <video width="200%" controls>
-                  <source src="./static/videos/eval/5.mp4" type="video/mp4">
-        
-                </video>
-                <img src="./static/images/5.png" alt="evaluation" style="width:100%;">
-                <div class="content has-text-justified custom-background p-2 custom-font" style="height: 110px">
-                  <b>(e) A piece of <span style="color:red">copper</span> is ignited,
-                    emitting a vivid and unique
-                    flame as it burns steadily.</b>
-                </div>
-              </div>
-              <div class="m-2">
-                <video width="200%" controls>
-                  <source src="./static/videos/eval/6.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <img src="./static/images/6.png" alt="evaluation" style="width:100%;">
-                <div class="content has-text-justified custom-background p-2 custom-font" style="height: 110px">
-                  <b>(f) A kite is soaring above a
-                    <span style="color:red">smooth and tranquil pond</span></b>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
   <div class="container">
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="leaderboard">Quantitative Evaluation</h2>
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3" id="leaderboard">Quantitative Evaluation</h2> -->
         <div class="content">
-         
-          <table>
-            <tr style="background-color:#E2F0D9;">
-              <th style="background-color:#E2F0D9;">Model</th>
-              <th style="background-color:#E2F0D9;">Size</th>
-              <th style="background-color:#E2F0D9;">Mechanics(↑)</th>
-              <th style="background-color:#E2F0D9;">Optics(↑)</th>
-              <th style="background-color:#E2F0D9;">Thermal(↑)</th>
-              <th style="background-color:#E2F0D9;">Material(↑)</th>
-              <th style="background-color:#E2F0D9;">Average(↑)</th>
-              <th style="background-color:#E2F0D9;">Human(↑)</th>
-            </tr>
-            <tr style="background-color:#FFF2CC;">
-              <td style="border:none;">CogVideoX</td>
-              <td style="border:none;">2B</td>
-              <td style="border:none;">0.38</td>
-              <td style="border:none;">0.43</td>
-              <td style="border:none;">0.34</td>
-              <td style="border:none;">0.39</td>
-              <td style="border:none;">0.39</td>
-              <td style="border:none;">0.31</td>
-            </tr>
-            <tr  style="background-color:#FFF2CC;">
-              <td style="border:none;">CogVideoX</td>
-              <td style="border:none;">5B</td>
-              <td style="border:none;">0.39</td>
-              <td style="border:none;">0.55</td>
-              <td style="border:none;">0.40</td>
-              <td style="border:none;">0.42</td>
-              <td style="border:none;">0.45</td>
-              <td style="border:none;">0.37</td>
-            </tr>
-            <tr style="background-color:#FFF2CC;">
-              <td style="border:none;">Open-Sora V1.2</td>
-              <td style="border:none;">1.1B</td>
-              <td style="border:none;">0.37</td>
-                <td style="border:none;">0.44</td>
-                <td style="border:none;">0.37</td>
-                <td style="border:none;">0.37</td>
-                <td style="border:none;">0.44</td>
-                <td style="border:none;">0.35</td>
-            </tr>
-          <tr style="background-color:#FFF2CC;">
-            <td style="border:none;">Lavie</td>
-            <td style="border:none;">860M</td>
-              <td style="border:none;">0.30</td>
-              <td style="border:none;">0.44</td>
-              <td style="border:none;">0.38</td>
-            <td style="border:none;">0.32</td>
-              <td style="border:none;">0.36</td>
-              <td style="border:none;">0.30</td>
-            </tr>
-            <tr style="background-color:#FFF2CC;">
-              <td style="border:none;">Vcthietz2.0</td>
-              <td style="border:none;">2B</td>
-              <td style="border:none;">0.41</td>
-              <td style="border:none;">0.56</td>
-              <td style="border:none;">0.44</td>
-              <td style="border:none;">0.37</td>
-              <td style="border:none;">0.45</td>
-              <td style="border:none;">0.36</td>
-            </tr>
-          <tr style="background-color:#FBE5D6;">
-              <td style="border:none;">Pika</td>
-              <td style="border:none;">-</td>
-              <td style="border:none;">0.35</td>
-              <td style="border:none;">0.46</td>
-              <td style="border:none;">0.39</td>
-              <td style="border:none;">0.39</td>
-              <td style="border:none;">0.39</td>
-              <td style="border:none;">0.36</td>
-            </tr>
-          <tr style="background-color:#FBE5D6;">
-              <td style="border:none;">Gen-3</td>
-              <td style="border:none;">-</td>
-              <td style="border:none;"><b>0.45</b></td>
-              <td style="border:none;">0.57</td>
-              <td style="border:none;">0.49</td>
-              <td style="border:none;"><b>0.51</b></td>
-              <td style="border:none;"><b>0.51</b></td>
-              <td style="border:none;">0.48</td>
-            </tr>
-          <tr style="background-color:#FBE5D6;">
-              <td style="border:none;">Kling</td>
-              <td style="border:none;">-</td>
-              <td style="border:none;"><b>0.45</b></td>
-              <td style="border:none;"><b>0.58</b></td>
-              <td style="border:none;"><b>0.50</b></td>
-              <td style="border:none;">0.40</td>
-              <td style="border:none;">0.49</td>
-              <td style="border:none;">0.44</td>
-            </tr>
-          </table>
-          <div class="content has-text-justified">
-            <p>
-            We conduct extensive experiments on a wide range of popular video
-            generation models. As illustrated in the Table above, even the best-performing model, Gen-3, only attains
-            a PCA score of 0.51 on PhyGenBench. This indicates that even for prompts containing obvious
-            physical commonsense, current T2V models struggle to generate videos that comply with intuitive
-            physics.It indirectly reflects that these models are still far from achieving the world simulator.</p>
-            <p>Furthermore, we identify the following key observations: </p>
-            <p><b>1): Across various categories of physical commonsense, all models consistently demonstrate superior performance in the domain of optics
-            compared to other areas. </b>Notably, Vchitect2.0 and CogVideoX-5b achieve a PCA score in the optics domain comparable to
-            that of closed-source models. We posit that this superior performance
-            in the optics domain can be attributed to the abundant and explicit representation of optical knowledge in pre-training
-            datasets, thereby enhancing the model's comprehension in this area.</p> 
-            <p><b>2): Kling and Gen-3 exhibit significantly higher performance compared to other models.</b> Specifically, Gen-3
-            demonstrates a robust understanding of material properties, achieving a score of 0.51, which substantially surpasses
-            other models. Kling performs particularly well in thermodynamics, attaining the
-            highest score of 0.50 in this domain. </p>
-            <p><b>3): Among open-source models, Vchitect2.0 and CogVideoX
-            5b perform comparatively well, both exceeding the performance level of Pika. </b>In contrast, Lavie
-            consistently exhibits lower physical correctness across all categories.</b>
-            </p>
-          </div>
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Qualitative Evaluation</h2>
-        
-        <div class="columns is-centered ">
-          <div class="column is-full has-text-centered content">
-                <div class="content has-text-centered">
-                  <img src="static/images/crop_qualitive_00.png" alt="qualitative evaluation" style="width: 400%; height: auto;">
-          </div>
-            <div class="content has-text-justified">
-              Qualitative comparisons of four categories demonstrate that current models perform relatively well in generating optical phenomenons but are weaker in mechanics, thermal, and material properties.
-            </div>
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="examples">Qualitative Evaluation Video Display</h2>
-        <div id="results1-carousel" class="carousel results-carousel">
-            <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px">
-              <b>(a) A cup of oil is slowly poured out <span style="color:red">in the space station</span>, releasing the liquid into the surrounding area</b>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/1-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-          </div>
-          <div >
-            <video width="200%" controls>
-              <source src="./static/videos/qualitative/1-2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div>
-            <video width="200%" controls>
-              <source src="./static/videos/qualitative/1-3.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div >
-            <video width="200%" controls>
-              <source src="./static/videos/qualitative/1-4.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-            <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px">
-              <b>(b) A <span style="color:red">solid glass ball</span> is gently placed on the surface of a bathtub filled with <span style="color:red">water</span>.</b>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/2-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/2-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/2-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/2-4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px">
-              <b>(c) <span style="color:green">A balloon</span> is floating over a serene and <span style="color:green">mirror-like ocean</span>.</b>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/3-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/3-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/3-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/3-4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px">
-              <b>(d) A large number of <span style="color:green">soap bubbles</span> are floating in the air <span style="color:green">under the sunlight</span>.</b>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/4-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/4-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/4-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/4-4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px; font-size: 14px;">
-              <b>(e) A timelapse captures the gradual transformation of <span style="color:red">ice cream</span> as the <span style="color:red">temperature rises significantly above 100 degree Celsius </span>.</b>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/5-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/5-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/5-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/5-4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px;font-size: 14px;">
-              <b>(f) A timelapse captures the transformation of <span style="color:red">dry ice</span> as it is exposed to a <span style="color:red">significantly increasing temperature at room temperature</span></b>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/6-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/6-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/6-3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <video width="200%" controls>
-                <source src="./static/videos/qualitative/6-4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-              <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px;font-size: 14px;">
-                <b>(g) A <span style="color:red">delicate, fragile egg</span> is hurled with significant force towards a <span style="color:red">rugged, solid rock</span> surface, where it collides upon
-                impact
-                </b>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/7-1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/7-2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/7-3.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/7-4.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="content has-text-justified custom-background p-1 custom-font" style="height: 124px;font-size: 14px;">
-                <b>(h) A timelapse captures the reaction as <span style="color:red">concentrated sulfuric</span> acid is poured onto <span style="color:red">a piece of bread</span>.
-                </b>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/8-1.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/8-2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/8-3.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div>
-                <video width="200%" controls>
-                  <source src="./static/videos/qualitative/8-4.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-          </div>
-        </div>
+
+          <table border="1" cellspacing="0" cellpadding="4" style="width:100%; border-collapse: collapse;">
+
+            <thead>
+                <tr>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Model</th>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Video<br>Quality</th>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Temporal<br>Quality</th>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Motion<br>Quality</th>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Text<br>Alignment</th>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Ethical<br>Robustness</th>
+                    <th style="background-color: #0d0e0d;
+                    color: white;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    font-size: 16px;">Human<br>Preference</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;" colspan="7"><b>Pre-training LRAs</b></td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Gen2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">3.33 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.63 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.03 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.57 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.36 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.87 (1)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Pika</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.11 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.71 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.37 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.03 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.08 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.21 (2)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Latte</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.67 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.79 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.84 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.03 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.00 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.77 (5)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>TF-T2V</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.76 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.09 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.01 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.90 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.06 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.87 (4)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Videocrafter2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.72 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.92 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.06 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.24 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.12 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.91 (3)</td>
+                </tr>
+                <tr>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;" colspan="7"><b>Post-training LRAs</b></td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Gen2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.71 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.37 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.16 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.71 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.57 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.96 (1)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Pika</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.16 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.34 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.24 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.12 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.18 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.24 (2)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Latte</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.82 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.89 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.89 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.43 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.42 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.89 (3)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>TF-T2V</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.91 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.00 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.95 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.82 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.86 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.85 (4)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Videocrafter2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.82 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.83 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.89 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.68 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.73 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.76 (5)</td>
+                </tr>
+                <tr>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;" colspan="7"><b>AMT Annotators</b></td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Gen2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.25 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.29 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.11 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.76 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">3.14 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.73 (1)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Pika</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.09 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.21 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.23 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.00 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.82 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.04 (2)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Latte</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.80 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.88 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.89 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.40 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.29 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.87 (3)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>TF-T2V</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.90 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.88 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.91 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.71 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.49 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.71 (4)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Videocrafter2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.86 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.76 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.87 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.51 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.29 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.56 (5)</td>
+                </tr>
+                <tr>
+                  <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;" colspan="7"><b>Post-training LRAs (Dyn)</b></td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Gen2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.75 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.42 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.30 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.90 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.66 (1)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">2.98 (1)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Pika</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.22 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.46 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.35 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.21 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.23 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.31 (2)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Latte</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.86 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.97 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.92 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.62 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.53 (2)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.98 (3)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>TF-T2V</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.92 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.01 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">1.00 (3)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.86 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.91 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.89 (4)</td>
+                </tr>
+                <tr>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;"><strong>Videocrafter2</strong></td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.87 (4)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.86 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.88 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.69 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.76 (5)</td>
+                    <td class="hover-row" style="text-align: center; vertical-align: middle; font-size: 15px;">0.81 (5)</td>
+                </tr>
+            </tbody>
+        </table>
       </div>
-      </div>
-        </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <!-- <div class="column is-full-width has-text-centered"> -->
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-3">Comparison Results</h2> -->
+          <div class="content has-text-justified">
+      
+            <p>
+              Scores and rankings of models across various dimensions for pre-training LRAs, AMT
+  Annotators, and Post-training LRAs. Post-training LRAs (Dyn) refers to the annotation results of
+  Post-training LRAs using the dynamic evaluation component.
+            </p>
+            <img src="static\images\main_result.png"  alt="comparison" class="center" style="width: 200%; height: auto;">
+            
+            <div class="content has-text-justified">
+              <p>
+
+              We evaluated five state-of-the-art T2V model, as illustrated in the Table above and the Figure below, regardless of the annotator sources, closed-source models typically perform better.
+              
+            
+              <p>Furthermore, we identify the following key observations: </p>
+              <p><b>1): The annotation results obtained by the 
+                pre-training LRAs markedly differ from those of the other three groups, evident in the discrepancy between the final model 
+                scores and rankings for each dimension. </b>In addition, the annotation results of the trained LRAs closely mirror those of the AMT personnel, 
+                yielding consistent final model ranking outcomes. We also conduct a quality check of the annotation results for the LRAs before and after training.
+              </p> 
+              <p><b>2): In the annotated results from AMT personnel, Gen2 demonstrates significant superiority over other models across all metrics, 
+                while Pika also exhibits commendable performance across most metrics.</b> In contrast, The performances of open-source models show 
+                less disparity in terms of video quality, temporal quality, and motion quality metrics. 
+                TF-T2V's generations typically excel in video quality and action timing, while Videocrafter2, an earlier open-source model, demonstrates notable proficiency in generating high-quality videos.
+                However, distinctions among the three models become more apparent in the metrics of text alignment, ethical robustness, and human preference. 
+                Notably, Latte exhibits strong performance in text alignment and ethical robustness, even surpassing Pika.  </p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+        </div>
+        
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <!-- <div class="column is-full-width has-text-centered"> -->
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Module validation</h2>
+          
+
+          <div class="content has-text-justified">
+      
+            <p>
+              Our protocol, augmented by the dynamic evaluation module, cuts annotation costs to about <b>53% </b> of the original expense while achieving comparable outcomes. 
+              Subsequent experiments further confirmed the module's effectiveness and reliability.
+            </p>
+
+            <img src="static\images\val.png"  alt="comparison" class="center" style="width: 200%; height: auto;">
+            
+            <div class="content has-text-justified">
+              <p>
+
+                <p><b>1): The dynamic component allows the annotations needed for the evaluation to grow nearly linearly as the number of models increases.
+                  </b>
+                  <!-- Specifically, we randomly select corresponding annotation results from 2-4 models (25 model combinations in total) 
+                  out of all annotations. For each combination, we simulate the dynamic annotation process, calculating average annotation demands 
+                  and employing an exponential model to forecast annotation needs with escalating model numbers.  -->
+                  As shown in the Figure above left, our protocol with dynamic component demonstrates a nearly linear growth in annotation demands as the number of models increases, greatly reducing the evaluation costs.
+                </p> 
+                <p><b>2): Dynamic evaluation algorithms guarantee that the most valuable samples are annotated.</b> 
+                Before the start of the dynamic evaluation, 
+                annotators are required to annotate 200 video pairs where distinguishing differences between them based on automated metrics is 
+                challenging. This step ensures that the samples most deserving of human assessment will not be discarded in the dynamic 
+                assessment and that the initially estimated model scores are not biased by specific prompt types.
+              </p>
+              <p><b>3): The bootstrap confidence intervals for score estimation further proves the validity of annotation results.</b> 
+                As shown in the Figure above right, the confidence intervals for Latte, Pika, TF-T2V, and Videocrafter2 are consistently narrow, 
+                signifying precise estimations. 
+                At the same time, the confidence intervals for Gen2's scores are relatively wide, as our dynamic algorithm's frequent exclusion of
+                comparisons involving Gen2 due to its significant superiority over the other models. Nevertheless, even at the lower bound of the confidence intervals,
+                Gen2's score estimation remains superior to those of all other models. 
+                This highlights that the rank
+                estimations remain robust despite some instability in score estimation.
+              </p>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
   </section>
- <section class="hero is-light is-small">
+
+
+
+
+
+ <!-- <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
-    <h1 class="title is-1 MMT-Bench">Discussion</h1>
+    <h1 class="title is-1 MMT-Bench">Further Discussions</h1>
   </div>
 </section>
 <section class="section">
@@ -816,24 +1004,8 @@ physical phenomenons, which we believe requires extensive training on synthetic 
 </div>
 
 </div>
-</section>
-<!-- @PAN TODO: bibtex -->
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title is-3 has-text-centered">BibTeX</h2>
-    <pre><code>
-      @misc{meng2024mmiumultimodalmultiimageunderstanding,
-        title={MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models}, 
-        author={Fanqing Meng and Jin Wang and Chuanhao Li and Quanfeng Lu and Hao Tian and Jiaqi Liao and Xizhou Zhu and Jifeng Dai and Yu Qiao and Ping Luo and Kaipeng Zhang and Wenqi Shao},
-        year={2024},
-        eprint={2408.02718},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV},
-        url={https://arxiv.org/abs/2408.02718}, 
-  }
-</code></pre>
-  </div>
 </section> -->
+
 
 <footer class="footer">
   <!-- <div class="container"> -->
@@ -870,9 +1042,9 @@ physical phenomenons, which we believe requires extensive training on synthetic 
   function changeButtonText() {
     var button = document.getElementById('toggleButton');
     if (button.innerHTML.includes("Validation Set Leaderboard")) {
-      button.innerHTML = "<b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)";
+      button.innerHTML = "<b style='font-size: 15pxr;'>Test Set Leaderboard</b> (Click to Switch)";
     } else {
-      button.innerHTML = "<b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)";
+      button.innerHTML = "<b style='font-size: 15pxr;'>Validation Set Leaderboard</b> (Click to Switch)";
     }
   }
   document.addEventListener('DOMContentLoaded', function() {
